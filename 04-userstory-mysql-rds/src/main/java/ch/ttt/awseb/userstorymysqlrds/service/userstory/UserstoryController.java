@@ -5,9 +5,7 @@ import ch.ttt.awseb.userstorymysqlrds.data.userstory.UserstoryJpaRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import java.net.URI;
 import java.util.List;
 
 @RestController
@@ -43,13 +41,8 @@ public class UserstoryController {
 
     @PostMapping
     public ResponseEntity<Void> create(@RequestBody final Userstory userstory) {
-        final Userstory saved = userstoryJpaRepository.save(userstory);
-
-        //Location
-        final URI uri = ServletUriComponentsBuilder.fromCurrentRequest()
-                .path("/{id}").buildAndExpand(saved.getId()).toUri();
-
-        return ResponseEntity.created(uri).build();
+        userstoryJpaRepository.save(userstory);
+        return ResponseEntity.ok().build();
     }
 
     @PutMapping
@@ -61,7 +54,7 @@ public class UserstoryController {
         }
 
         final Userstory updated = userstoryJpaRepository.save(userstory);
-        return new ResponseEntity<Userstory>(updated, HttpStatus.OK);
+        return new ResponseEntity<>(updated, HttpStatus.OK);
     }
 
 }
