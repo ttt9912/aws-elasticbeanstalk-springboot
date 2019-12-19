@@ -1,4 +1,4 @@
-package ch.ttt.awseb.userstorymysqlrds.data;
+package ch.ttt.awseb.userstorymysqlrds.data.userstory;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -21,8 +21,8 @@ public class Userstory {
     private Long id;
     private String username;
 
-    @Size(min=10, message="Enter at least 10 Characters...")
+    @Size(min=3, message="Enter at least 3 Characters...")
     private String description;
     private LocalDate targetDate;
-    private boolean isDone;
+    private Boolean isDone; // note: primitive does not work
 }

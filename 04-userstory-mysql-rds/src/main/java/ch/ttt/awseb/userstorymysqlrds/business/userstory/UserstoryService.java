@@ -1,7 +1,7 @@
-package ch.ttt.awseb.userstorymysqlrds.business;
+package ch.ttt.awseb.userstorymysqlrds.business.userstory;
 
-import ch.ttt.awseb.userstorymysqlrds.data.Userstory;
-import ch.ttt.awseb.userstorymysqlrds.data.UserstoryJpaRepository;
+import ch.ttt.awseb.userstorymysqlrds.data.userstory.Userstory;
+import ch.ttt.awseb.userstorymysqlrds.data.userstory.UserstoryJpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.time.LocalDate;

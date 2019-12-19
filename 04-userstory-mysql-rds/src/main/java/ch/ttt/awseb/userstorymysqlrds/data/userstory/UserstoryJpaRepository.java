@@ -1,4 +1,4 @@
-package ch.ttt.awseb.userstorymysqlrds.data;
+package ch.ttt.awseb.userstorymysqlrds.data.userstory;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
