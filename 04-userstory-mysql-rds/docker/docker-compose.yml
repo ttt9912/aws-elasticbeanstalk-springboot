@@ -7,26 +7,14 @@ services:
   mysql:
     image: mysql:latest
     container_name: mysql_local
+    restart: always
     environment:
-      MYSQL_USER: thomas-local
-      MYSQL_PASSWORD: pass1
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: default_schema
+      MYSQL_DATABASE: userstory
+      MYSQL_USER: thomas-local # TODO: remove thomas-local user and just use root?
+      MYSQL_PASSWORD: pass1
     ports:
       - '3306:3306'
     expose:
       # Opens port 3306 on the container
       - '3306'
-
-  phpmyadmin:
-    image: phpmyadmin/phpmyadmin
-    container_name: phpmyadmin_local
-    links:
-      - mysql
-    environment:
-      PMA_HOST: mysql
-      PMA_PORT: 3306
-      PMA_ARBITRARY: 1
-    restart: always
-    ports:
-      - '8183:80'

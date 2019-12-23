@@ -1,0 +1,21 @@
+----------------------------------------------------
+Create New Application
+----------------------------------------------------
+Name		    : 02-userstory-h2
+
+----------------------------------------------------
+Create Environment
+----------------------------------------------------
+Platform		    : Tomcat
+Upload Your Code	: upload war file
+
+----------------------------------------------------
+Enable H2 Console
+----------------------------------------------------
+spring.h2.console.settings.web-allow-others=true
+
+----------------------------------------------------
+Info
+----------------------------------------------------
+Reverse Proxy 	: is Apache HTTP Proxy, and no longer nginx
+Logs			: tomcat8 folder contains application logs
