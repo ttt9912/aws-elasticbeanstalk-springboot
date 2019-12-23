@@ -1,10 +1,10 @@
 # Persistence - Amazon RDS (Relational Database Service)
 
 ### Create app with MySQL
-Local Connection: mysql docker  
+- Local Connection: mysql docker  
 
 ### Create New Application
-Name: 04-userstory-mysql-rds
+- Name: 04-userstory-mysql-rds
 
 ### Create Environment
 - Name: 04-UserstoryMysqlRds-dev  
