@@ -54,7 +54,7 @@ Unused Environments should be terminated. Otherwise fees may apply if usage exce
 - Upload Your Code: upload war file  
 
 ## Enable H2 Console
-`spring.h2.console.settings.web-allow-others=true
+`spring.h2.console.settings.web-allow-others=true`
 
 ## Info
 - ***Reverse Proxy***: is Apache HTTP Proxy, and no longer nginx  
