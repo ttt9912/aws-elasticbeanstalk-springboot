@@ -12,6 +12,9 @@ import org.springframework.stereotype.Component;
 import java.util.Arrays;
 import java.util.stream.StreamSupport;
 
+/*
+ * Log all Environment Variables at startup
+ */
 @Slf4j
 @Component
 public class EnvironmentConfigurationLogger {

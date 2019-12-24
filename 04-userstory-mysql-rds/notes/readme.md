@@ -18,3 +18,11 @@
 - Availability	: low  
 - -> Save  
 - -> Create Environment
+
+## RDS Environment Variables
+`RDS_HOSTNAME`
+`RDS_PORT`
+`RDS_DB_NAME`
+`RDS_USERNAME`
+`RDS_PASSWORD`  
+are automatically set by Elastic Beanstalk, no manual Environment configuration necessary
