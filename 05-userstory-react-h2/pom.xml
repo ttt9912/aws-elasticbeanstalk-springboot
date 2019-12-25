@@ -12,7 +12,7 @@
     <artifactId>05-userstory-react-h2</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>05-userstory-backend</module>
+        <module>05-userstory-backend-secured</module>
         <module>05-userstory-frontend</module>
     </modules>
 
