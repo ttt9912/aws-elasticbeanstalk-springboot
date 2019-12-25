@@ -4,10 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <modules>
-        <module>01-helloworld-rest-api</module>
         <module>02-userstory-rest-api-h2</module>
-        <module>03-userstory-h2-jsp-war</module>
         <module>04-userstory-mysql-rds</module>
+        <module>05-userstory-react-h2</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
