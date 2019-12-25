@@ -4,6 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /*
+ * - use RDS when deployed on AWS
+ * - use local Mysql Docker when local
+ *
  * ---------------------------------------------
  * Local Mysql & PhpMyAdmin Docker
  * ---------------------------------------------
