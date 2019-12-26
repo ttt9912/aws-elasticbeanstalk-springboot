@@ -3,8 +3,14 @@ import './App.css';
 
 function App() {
     return (
-        <div className="App">
-            Hello
+        <HelloMessage name="Thomas"/>
+    );
+}
+
+function HelloMessage(props) {
+    return (
+        <div>
+            Hello {props.name}
         </div>
     );
 }
