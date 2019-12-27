@@ -1,16 +1,11 @@
 import React from 'react';
 import './App.css';
+import UserstoryApp from './component/UserstoryApp';
 
 function App() {
     return (
-        <HelloMessage name="Thomas"/>
-    );
-}
-
-function HelloMessage(props) {
-    return (
-        <div>
-            Hello {props.name}
+        <div className="container">
+            <UserstoryApp/>
         </div>
     );
 }

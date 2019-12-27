@@ -20,7 +20,32 @@ bundles app into a compressed set of js files for production
 `$ npm test`  
 starts test runner
 
-# Building Blocks
+## Frameworks
+**axios**: Promise based REST client
+
+**react-router-dom**: Routing
+
+**formik**: Forms
+
+### Add framework
+`$ npm add axios`
+
+adds the dependencies to package.json
+
+## CSS
+
+### Add Bootstrap
+add to App.css:  
+`@import url(https://unpkg.com/bootstrap@4.1.0/dist/css/bootstrap.min.css);`
+
+# React Components
+
+## Component Lifecylce Methods
+`componentDidMount()` - similar to ngOnInit()
+
+`componentDidUpdate()`, `componentWillUnmount()`
+
+![alt](img/react-lifecycle-methods.png)
 
 ## Class Components
 
@@ -86,3 +111,21 @@ function HelloMessage(props) {
     );
 }
 ```
+
+# Forms, Themes
+
+### Formik
+
+### React Bootstrap
+https://react-bootstrap.github.io/
+
+### Material Design
+
+# Misc
+
+### Untyped method parameters
+This is Javascript, not Typescript. Method Parameters
+have no types (dynamic type system).
+
+### Access Path Variables
+`this.props.match.params.<variable name>`
