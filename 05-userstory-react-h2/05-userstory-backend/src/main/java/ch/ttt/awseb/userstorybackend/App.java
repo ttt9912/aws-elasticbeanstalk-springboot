@@ -13,8 +13,16 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * ---------------------------------------------
  * localhost:5000/userstories
  *
- * $ curl -v -X POST -d '{"username": "paul", "description": "Learn JPA", "targetDate": "2019-12-14", "isDone": false}' -H "Content-Type:application/json" localhost:5000/userstories
- * $ curl -v -X PUT -d '{"id": 10, "username": "peter", "description": "Learn AWS", "targetDate": "2019-12-14", "isDone": true}' -H "Content-Type:application/json" localhost:5000/userstories
+ * $ curl localhost:5000/userstories | json_pp
+ *
+ $ curl -v -X POST localhost:5000/userstories \
+    -H "Content-Type:application/json" \
+    -d '{"username": "paul", "description": "Learn JPA", "targetDate": "2019-12-14", "isDone": false}'
+
+ $ curl -v -X PUT localhost:5000/userstories \
+    -H "Content-Type:application/json" \
+    -d '{"id": 10, "username": "peter", "description": "Learn AWS", "targetDate": "2019-12-14", "isDone": true}'
+ *
  */
 @SpringBootApplication
 public class App {

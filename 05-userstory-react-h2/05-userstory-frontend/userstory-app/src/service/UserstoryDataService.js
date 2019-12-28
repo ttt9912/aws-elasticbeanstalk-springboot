@@ -1,27 +1,28 @@
 import axios from 'axios';
+import {API_URL} from '../Constants'
 
-const API_URL = 'http://localhost:5000/userstories';
+const USERSTORIES_URL = `${API_URL}/userstories`;
 
 class UserstoryDataService {
 
     findAll() {
-        return axios.get(`${API_URL}`);
+        return axios.get(`${USERSTORIES_URL}`);
     }
 
     findById(id) {
-        return axios.get(`${API_URL}/${id}`);
+        return axios.get(`${USERSTORIES_URL}/${id}`);
     }
 
     delete(id) {
-        return axios.delete(`${API_URL}/${id}`);
+        return axios.delete(`${USERSTORIES_URL}/${id}`);
     }
 
     create(userstory) {
-        return axios.post(`${API_URL}`, userstory);
+        return axios.post(`${USERSTORIES_URL}`, userstory);
     }
 
     update(userstory) {
-        return axios.put(`${API_URL}`, userstory);
+        return axios.put(`${USERSTORIES_URL}`, userstory);
     }
 }
 
