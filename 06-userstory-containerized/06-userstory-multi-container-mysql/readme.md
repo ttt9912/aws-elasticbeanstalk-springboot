@@ -1,7 +1,7 @@
 # Info
 Deploy 2 Docker containers (App & Mysql) to one AWS instance
 
-### Run Local Mysql Docker
+## Run Local Mysql Docker
 ```shell script
 $ docker run --detach \
   --env MYSQL_ROOT_PASSWORD=root \
@@ -12,12 +12,12 @@ $ docker run --detach \
   --publish 3306:3306 mysql:5.7
 ```
 
-#### MySQL CLI
+### MySQL CLI
 `$ docker exec -it mysql-container mysql -u thomas-local -p`
 
 password: pass1
 
-### Run App direct
+## Run App direct
 **Run Argument:** MYSQL_HOST=localhost
 
 `$ mvn spring-boot:run -Dspring-boot.run.arguments=--MYSQL_HOST=localhost`
@@ -25,12 +25,12 @@ password: pass1
 or via **Run Config**
 - Program Arguments: --MYSQL_HOST=localhost
 
-### Run App Local Docker
+## Run App Local Docker
 `$ mvn clean install`
 
 `$ docker run -p 8080:5000 --link mysql-container:mysql ttt9912/06-userstory-multi-container-mysql:0.0.1-SNAPSHOT`
 
-### Browser
+## Browser
 - Local run: port 5000
 - Docker run: port 8080
 
@@ -48,7 +48,7 @@ $ curl -v -X PUT localhost:<port>/userstories \
     -d '{"id": 10, "username": "peter", "description": "Learn AWS", "targetDate": "2019-12-14", "isDone": true}'
 ```
 
-### H2 Console 
+## H2 Console 
 try it on deployed app
 
 `localhost:<port>/h2-console`  
@@ -76,5 +76,5 @@ App does now access MySQL on
 ## AWS
 update Dockerrun.aws.json to configure both containers
 
-#### Template
+### Template
 https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker_v2config.html
