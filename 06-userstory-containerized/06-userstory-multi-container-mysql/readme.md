@@ -60,28 +60,15 @@ JDBC URL: `jdbc:h2:mem:testdb`
 Note: deploying Mysql DB as Container is not ideal since 
 Containers should be able to be recreated
 
-## Local
-
-### Link & Run Containers
+## Link & Run Containers
 Note: link is deprecated!
 
 ![alt](img/docker-link-setup.png)
 
-#### Run MySQL Container
-```shell script
-$ docker run --detach \
-     --env MYSQL_ROOT_PASSWORD=root \
-     --env MYSQL_USER=thomas-local \
-     --env MYSQL_PASSWORD=pass1 \
-     --env MYSQL_DATABASE=userstory \
-     --name mysql-container \
-     --publish 3306:3306 mysql:5.7
-```
+#### Run MySQL container
 
 #### Run App Container
 Link App Container to MySQL Container
-
-`docker run -p 8080:5000 --link mysql-container:mysql ttt9912/06-userstory-multi-container-mysql:0.0.1-SNAPSHOT`
 
 App does now access MySQL on 
 `jdbc:mysql://mysql-container:3306/userstory`
