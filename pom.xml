@@ -7,6 +7,7 @@
         <module>02-userstory-rest-api-h2</module>
         <module>04-userstory-mysql-rds</module>
         <module>05-userstory-react-h2</module>
+        <module>06-userstory-containerized</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
