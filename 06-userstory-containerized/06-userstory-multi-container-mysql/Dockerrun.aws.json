@@ -1,0 +1,50 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "mysql-container",
+      "image": "mysql:5.7",
+      "environment": [
+        {
+          "name": "MYSQL_ROOT_PASSWORD",
+          "value": "root"
+        },
+        {
+          "name": "MYSQL_USER",
+          "value": "thomas-local"
+        },
+        {
+          "name": "MYSQL_PASSWORD",
+          "value": "pass1"
+        },
+        {
+          "name": "MYSQL_DATABASE",
+          "value": "userstory"
+        }
+      ],
+      "essential": true,
+      "memory": 256,
+      "portMappings": [
+        {
+          "hostPort": 3306,
+          "containerPort": 3306
+        }
+      ]
+    },
+    {
+      "name": "userstory-app",
+      "image": "ttt9912/06-userstory-multi-container-mysql:0.0.1-SNAPSHOT",
+      "essential": true,
+      "memory": 256,
+      "portMappings": [
+        {
+          "hostPort": 5000,
+          "containerPort": 5000
+        }
+      ],
+      "links": [
+        "mysql"
+      ]
+    }
+  ]
+}

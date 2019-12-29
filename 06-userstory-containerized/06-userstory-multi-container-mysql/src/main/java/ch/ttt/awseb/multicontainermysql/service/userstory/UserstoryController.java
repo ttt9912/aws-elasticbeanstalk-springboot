@@ -1,13 +1,12 @@
-package ch.ttt.awseb.userstorycontainerized.service.userstory;
+package ch.ttt.awseb.multicontainermysql.service.userstory;
 
-import ch.ttt.awseb.userstorycontainerized.data.userstory.Userstory;
-import ch.ttt.awseb.userstorycontainerized.data.userstory.UserstoryJpaRepository;
+import ch.ttt.awseb.multicontainermysql.data.userstory.Userstory;
+import ch.ttt.awseb.multicontainermysql.data.userstory.UserstoryJpaRepository;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/userstories")
 public class UserstoryController {

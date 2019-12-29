@@ -10,31 +10,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>06-userstory-containerized</artifactId>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-    </dependencies>
-
-    <build>
-        <plugins>
-            <!-- create runnable jars -->
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
-
+    <packaging>pom</packaging>
+    <modules>
+        <module>06-userstory-single-container-h2</module>
+        <module>06-userstory-multi-container-mysql</module>
+    </modules>
 </project>

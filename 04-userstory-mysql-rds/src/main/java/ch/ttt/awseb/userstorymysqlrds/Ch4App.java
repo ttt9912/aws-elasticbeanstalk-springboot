@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * - use local Mysql Docker when local
  *
  * ---------------------------------------------
- * Local Mysql & PhpMyAdmin Docker
+ * Local Mysql Docker
  * ---------------------------------------------
  * $ docker-compose up
  *

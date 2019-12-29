@@ -1,4 +1,4 @@
-package ch.ttt.awseb.userstorycontainerized.data.userstory;
+package ch.ttt.awseb.multicontainermysql.data.userstory;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

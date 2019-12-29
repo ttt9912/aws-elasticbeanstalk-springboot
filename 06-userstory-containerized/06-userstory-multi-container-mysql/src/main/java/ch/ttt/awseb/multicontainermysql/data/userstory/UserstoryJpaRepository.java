@@ -1,4 +1,4 @@
-package ch.ttt.awseb.userstorycontainerized.data.userstory;
+package ch.ttt.awseb.multicontainermysql.data.userstory;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

@@ -11,7 +11,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: userstory
-      MYSQL_USER: thomas-local # TODO: remove thomas-local user and just use root?
+      MYSQL_USER: thomas-local
       MYSQL_PASSWORD: pass1
     ports:
       - '3306:3306'
