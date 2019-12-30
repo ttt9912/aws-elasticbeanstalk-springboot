@@ -177,3 +177,58 @@ Storage for all kinds of data that are not a relational database
 S3 is global, does not belong to a Region
 
 #### S3 Website Hosting
+
+
+
+# Regions
+AWS Global Infrastructure
+https://aws.amazon.com/de/about-aws/global-infrastructure/
+
+![alt](img/regions.png)
+
+### Reasons
+- Performance: Servers are faster when they are closer to the Requests
+- Availability
+
+# Billing
+
+### Check Billing Dashboard
+
+![alt](img/billing-dashb.png)
+
+### Free Tier
+https://aws.amazon.com/de/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc
+
+### Pricing (what do services cost)
+https://aws.amazon.com/de/pricing/
+
+## Alerts
+
+#### Receive Notifications
+Account -> Billing Dashboard -> Billing preferences
+
+![alt](img/alerts.png)
+
+### Define Alerts with CloudWatch
+
+![alt](img/alerts-cloudwatch.png)
+
+- Metric: Billing -> EstimatedCharges 
+- Conditions: Greater 0 USD
+- Create a new topic: Billing_CloudWatch_Alarms_Topic 
+- Email endpoints that will receive the notification: blabla@gmail.com 
+- -> Create Topic
+
+## Budgets
+
+### Define Budgets & Alerts with AWS Budgets
+- Services -> AWS Budgets
+- Create a Budget (Cost Budget)
+- Monthly Budget Amount	: $1
+
+#### Configure alerts
+
+![alt](img/budgets.png)
+
+## Tipps
+Minimize uptime, always stop resources, when they are not used
