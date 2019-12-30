@@ -76,5 +76,10 @@ App does now access MySQL on
 ## AWS
 update Dockerrun.aws.json to configure both containers
 
+### create new Application & Environment
+- create Environment
+- Platform: Multi-container Docker
+- upload Dockerrun.aws.json file
+
 ### Template
 https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker_v2config.html

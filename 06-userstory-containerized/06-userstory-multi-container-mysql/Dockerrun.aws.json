@@ -43,7 +43,7 @@
         }
       ],
       "links": [
-        "mysql"
+        "mysql-container"
       ]
     }
   ]

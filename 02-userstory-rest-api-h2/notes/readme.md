@@ -11,18 +11,12 @@ US East N. Virginia
 - -> Create App
 - Name: rest-api
 
-### Create Environment
-- Dev, Stage, Prod, …  
-- Web server Environment (for Webapps), Worker Environment (for Batch Jobs)  
-- Platform: Docker, .jar -> Java, .war -> Tomcat  
+### Create Environment 
 - -> Create  
 - Name: “rest-api-dev”  
 - Use “Sample Application”
 
 ![alt](img/sample-app.png)
-
-## Terminate Environments!
-Unused Environments should be terminated. Otherwise fees may apply if usage exceeds.
 
 ### Delete Application
 - nothing can be restored  
