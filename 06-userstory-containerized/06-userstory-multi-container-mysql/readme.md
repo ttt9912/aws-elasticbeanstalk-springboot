@@ -83,3 +83,34 @@ update Dockerrun.aws.json to configure both containers
 
 ### Template
 https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker_v2config.html
+
+## ECS - Elastic Container Service
+AWS uses ECS in the background for Multi container deployments
+
+## No Reverse Proxy
+No Reverse Proxy is present in Multi container deployments. 
+Application starts fine but is not accessible via browser.
+
+### Open Access to a Container Port
+```shell script
+{
+    "hostPort": 5000,
+    "containerPort": 5000
+} 
+```
+
+lets the EC2 Instance expose port 5000, but the
+**Security Group** of the EC2 instance prevents traffic on port 5000
+
+#### Configure Security Groups
+Services -> EC2 -> Security Groups -> pick the one responsible for the corresponding Environment
+
+![alt](img/sec-group-5000.png)
+
+Traffic is allowed on port 80 by default.
+Add port 5000.
+
+### Browser with port 5000
+http://06-userstory-multicontainer-mysql.pd4mujhmpi.us-east-1.elasticbeanstalk.com:**5000**/userstories
+
+

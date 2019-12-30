@@ -8,6 +8,7 @@
         <module>04-userstory-mysql-rds</module>
         <module>05-userstory-react-h2</module>
         <module>06-userstory-containerized</module>
+        <module>08-userstory-eb-cli</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
